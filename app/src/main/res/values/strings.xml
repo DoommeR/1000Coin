@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">1000Coin</string>
+    <string name="title_home">Домой</string>
+    <string name="title_receive">Приемка</string>
+    <string name="title_give">Выдача</string>
+    <string name="title_restore">Возврат</string>
+</resources>
