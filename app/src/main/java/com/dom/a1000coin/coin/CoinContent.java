@@ -1,14 +1,6 @@
 package com.dom.a1000coin.coin;
-
-import android.media.Image;
-import android.support.annotation.AnyRes;
 import android.support.annotation.DrawableRes;
-import android.support.annotation.RawRes;
-import android.widget.ImageView;
-
-
 import com.dom.a1000coin.R;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

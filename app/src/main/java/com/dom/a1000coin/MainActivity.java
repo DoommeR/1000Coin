@@ -7,8 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.WindowManager;
 
-import java.util.Collection;
-//git test
 public class MainActivity extends AppCompatActivity {
 
 
@@ -30,17 +28,13 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    //mTextMessage.setText(R.string.title_home);
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_holder, getFragment(0)).addToBackStack(null).commit();
                     return true;
-                case R.id.navigation_give:
+                case R.id.navigation_myCollection:
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_holder, getFragment(1)).addToBackStack(null).commit();
                     return true;
-                case R.id.navigation_receieve:
+                case R.id.navigation_catalog:
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_holder, getFragment(2)).addToBackStack(null).commit();
-                    return true;
-                case R.id.navigation_restore:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_holder, getFragment(3)).addToBackStack(null).commit();
                     return true;
             }
             return false;
@@ -49,8 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
+        
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);

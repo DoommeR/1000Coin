@@ -8,14 +8,11 @@
         android:title="@string/title_home" />
 
     <item
-        android:id="@+id/navigation_receieve"
-        android:title="@string/title_receive" />
-    <item
-        android:id="@+id/navigation_give"
+        android:id="@+id/navigation_myCollection"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_give" />
+        android:title="@string/title_myCollection" />
     <item
-        android:id="@+id/navigation_restore"
-        android:title="@string/title_restore" />
+        android:id="@+id/navigation_catalog"
+        android:title="@string/title_catalog" />
 
 </menu>
